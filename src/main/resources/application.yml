@@ -3,9 +3,27 @@ eureka:
     hostname: localhost
   client:
     service-url:
-      defaulZone: http://localhost:8761/eureka/,http://localhost:8762/eureka/
+      defaulZone: http://localhost:8761/eureka/
 server:
-  port: 8763
+  port: 8762
+
+cas:
+  #cas服务端的地址
+  server-url-prefix: http://gcdc-sso-pc/cas
+  #cas服务端的登录地址
+  server-login-url: http://gcdc-sso-pc/cas/login
+  #当前服务器的地址(客户端)
+  client-host-url: http://localhost:8762/
+  #Ticket校验器
+  validation-type: CAS
+
 spring:
   application:
     name: client
+  datasource:
+    username: isystem
+    password: isystem
+    url: jdbc:jtds:sqlserver://GCDC-SQLDEV01.generalichina.com:2599;instance=SQLUAT01;DatabaseName=bcc
+    driver-class-name: net.sourceforge.jtds.jdbc.Driver
+    hikari:
+      connection-test-query: select 1
