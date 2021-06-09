@@ -47,6 +47,7 @@ public class RuleService {
         }
         return true;
     }
+
     private boolean and(RuleDto dto, List<BaseRule> ruleList) {
         for (BaseRule rule : ruleList) {
             boolean execute = rule.execute(dto);
