@@ -5,6 +5,9 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
+/**
+ * @author QSNP253
+ */
 public class InputTest {
     /**
      * 文件输出大写转小写

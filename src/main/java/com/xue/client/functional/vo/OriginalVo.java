@@ -4,6 +4,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+/**
+ * @author QSNP253
+ */
 @Getter
 @Setter
 @NoArgsConstructor

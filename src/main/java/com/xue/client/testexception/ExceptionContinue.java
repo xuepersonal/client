@@ -6,6 +6,9 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * @author QSNP253
+ */
 public class ExceptionContinue {
 
     private static final Logger logger = LoggerFactory.getLogger(ExceptionContinue.class);

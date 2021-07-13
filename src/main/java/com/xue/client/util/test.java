@@ -6,6 +6,9 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+/**
+ * @author QSNP253
+ */
 public class test {
     public void test(){
         List<String> list = new ArrayList<>();
@@ -16,7 +19,8 @@ public class test {
         List<String> itemCodeList = objList.stream().map(Obj::getStr)
                 .collect(Collectors.toList());
         long count = objList.stream().distinct().count();
-        if (objList.size() != count) {//重复
+        //重复
+        if (objList.size() != count) {
 
         }
     }

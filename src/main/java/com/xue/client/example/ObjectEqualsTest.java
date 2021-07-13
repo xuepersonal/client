@@ -4,10 +4,13 @@ import org.junit.Test;
 
 import java.util.Objects;
 
-public class ObjectEquals {
+/**
+ * @author QSNP253
+ */
+public class ObjectEqualsTest {
 
     @Test
-    public void Test(){
+    public void test(){
         /*
         字符串比较
          */

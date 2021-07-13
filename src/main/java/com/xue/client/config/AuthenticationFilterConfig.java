@@ -9,6 +9,9 @@ import org.springframework.context.annotation.Configuration;
 
 import javax.servlet.DispatcherType;
 
+/**
+ * @author QSNP253
+ */
 @Configuration
 @EnableCasClient
 public class AuthenticationFilterConfig extends CasClientConfigurerAdapter {
@@ -23,11 +26,10 @@ public class AuthenticationFilterConfig extends CasClientConfigurerAdapter {
     /**
      * 单点登录本地用户信息
      *
-     * @return
      */
     @Bean
     public FilterRegistrationBean<AuthorFilter> localUserInfoFilter() {
-        FilterRegistrationBean<AuthorFilter> registrationBean = new FilterRegistrationBean<AuthorFilter>();
+        FilterRegistrationBean<AuthorFilter> registrationBean = new FilterRegistrationBean<>();
         registrationBean.setFilter(new AuthorFilter());
         registrationBean.addUrlPatterns("/*");
         registrationBean.setName("authorFilter");

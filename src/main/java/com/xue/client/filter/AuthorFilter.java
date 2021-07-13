@@ -15,6 +15,9 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * @author QSNP253
+ */
 public class AuthorFilter implements Filter {
 
     private static final Logger logger = LoggerFactory.getLogger(AuthorFilter.class);
@@ -24,7 +27,7 @@ public class AuthorFilter implements Filter {
     protected String contextPath;
 
     @Override
-    public void init(FilterConfig filterConfig) throws ServletException {
+    public void init(FilterConfig filterConfig) {
         String param = filterConfig.getInitParameter(PARAM_NAME_EXCLUSIONS);
         if (param != null && param.trim().length() != 0) {
             this.excludesPattern = new HashSet(Arrays.asList(param.split("\\s*,\\s*")));
@@ -56,7 +59,6 @@ public class AuthorFilter implements Filter {
         String path = req.getContextPath();
         if (null == userId) {
             resp.sendRedirect(path + "html/error.html");
-            return;
         } else {
             logger.info("用户id为：" + userId);
             String uriStr = req.getRequestURL().toString();

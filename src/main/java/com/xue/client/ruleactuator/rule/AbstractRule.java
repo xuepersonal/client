@@ -2,7 +2,10 @@ package com.xue.client.ruleactuator.rule;
 
 import com.xue.client.ruleactuator.BaseRule;
 
-// 规则模板
+/**
+ * 规则模板
+ * @author QSNP253
+ */
 public abstract class AbstractRule implements BaseRule {
     protected <T> T convert(RuleDto dto) {
         return (T) dto;

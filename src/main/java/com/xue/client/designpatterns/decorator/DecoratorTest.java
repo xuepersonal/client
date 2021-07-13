@@ -2,7 +2,10 @@ package com.xue.client.designpatterns.decorator;
 
 import org.junit.Test;
 
-public class TestDecorator {
+/**
+ * @author QSNP253
+ */
+public class DecoratorTest {
 
     @Test
     public void test() {

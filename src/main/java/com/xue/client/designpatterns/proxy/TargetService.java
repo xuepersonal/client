@@ -1,7 +1,7 @@
 package com.xue.client.designpatterns.proxy;
 
 /**
- * @Auther: xue
+ * @author QSNP253
  * @Description:服务类接口
  * @Date: 10:12 2021/4/20
  */

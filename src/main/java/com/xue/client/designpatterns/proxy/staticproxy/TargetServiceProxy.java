@@ -2,6 +2,9 @@ package com.xue.client.designpatterns.proxy.staticproxy;
 
 import com.xue.client.designpatterns.proxy.TargetService;
 
+/**
+ * @author QSNP253
+ */
 public class TargetServiceProxy implements TargetService {
 
     private TargetService targetService;

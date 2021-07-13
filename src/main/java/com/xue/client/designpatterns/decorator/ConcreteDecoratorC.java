@@ -2,10 +2,13 @@ package com.xue.client.designpatterns.decorator;
 
 /**
  * 具体装饰类C
+ * @author QSNP253
  */
 public class ConcreteDecoratorC extends Decorator{
 
-    //被装饰者
+    /**
+     * 被装饰者
+     */
     Component component;
 
     public ConcreteDecoratorC(Component component){

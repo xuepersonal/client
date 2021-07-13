@@ -1,5 +1,8 @@
 package com.xue.client.designpatterns.proxy;
 
+/**
+ * @author QSNP253
+ */
 public class TargetServiceImpl implements TargetService {
 
     @Override

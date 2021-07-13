@@ -6,6 +6,7 @@ import java.io.InputStream;
 
 /**
  * 基于java的I/O装饰器
+ * @author QSNP253
  */
 public class IODecorator extends FilterInputStream {
     /**

@@ -2,11 +2,14 @@ package com.xue.client.ruleactuator.rule;
 
 
 
-// 业务数据@Data
+/**
+ * 业务数据@Data
+ * @author QSNP253
+ */
 public class RuleDto {
     private String address;
     private String name;
-    private String Subject;
+    private String subject;
     private int age;
 
     public String getName() {
@@ -18,11 +21,11 @@ public class RuleDto {
     }
 
     public String getSubject() {
-        return Subject;
+        return subject;
     }
 
     public void setSubject(String subject) {
-        Subject = subject;
+        this.subject = subject;
     }
 
     public String getAddress() {

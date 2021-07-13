@@ -1,21 +1,24 @@
 package com.xue.client.controller;
 
 import com.xue.client.entity.ValueBean;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.servlet.http.HttpServletRequest;
 
-
+/**
+ * @author QSNP253
+ */
 @RestController
 @RequestMapping("/test")
 public class TestRestController {
 
-    @Autowired
-    private ValueBean valueBean;
+    private final ValueBean valueBean;
+
+    public TestRestController(ValueBean valueBean) {
+        this.valueBean = valueBean;
+    }
 
     @RequestMapping(value = "/test", method = RequestMethod.GET)
     @ResponseBody

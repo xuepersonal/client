@@ -5,6 +5,9 @@ import com.xue.client.ruleactuator.service.RuleService;
 
 import java.util.Arrays;
 
+/**
+ * @author QSNP253
+ */
 public class RuleServiceTest {
     @org.junit.Test
     public void execute() {

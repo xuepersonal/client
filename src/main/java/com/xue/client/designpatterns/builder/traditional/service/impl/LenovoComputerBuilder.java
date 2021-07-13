@@ -5,9 +5,10 @@ import com.xue.client.designpatterns.builder.traditional.service.ComputerBuilder
 
 /**
  * 联想电脑构建者类
+ * @author QSNP253
  */
 public class LenovoComputerBuilder extends ComputerBuilder {
-    private Computer computer;
+    private final Computer computer;
     public LenovoComputerBuilder(String cpu, String ram) {
         computer=new Computer(cpu,ram);
     }

@@ -7,7 +7,6 @@ package com.xue.client.designpatterns.builder.lombok;
 public class ReturnMsg {
 
     public static final String SUCC_CODE = "0";
-    public static final String ERR_CODE = "1";
     public static final String SUCCESS = "成功";
 
 }

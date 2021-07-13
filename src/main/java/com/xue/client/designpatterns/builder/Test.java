@@ -1,5 +1,8 @@
 package com.xue.client.designpatterns.builder;
 
+/**
+ * @author QSNP253
+ */
 public class Test {
 
     @org.junit.Test
@@ -9,5 +12,6 @@ public class Test {
                 .setKeyboard("罗技")
                 .setUsbCount(2)
                 .build();
+        System.out.println(computer.toString());
     }
 }

@@ -4,7 +4,10 @@ import org.junit.Test;
 
 import java.util.StringJoiner;
 
-public class StringJionerExample {
+/**
+ * @author QSNP253
+ */
+public class StringJionerExampleTest {
 
     @Test
     public void test(){

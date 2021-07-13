@@ -4,7 +4,10 @@ import com.xue.client.designpatterns.proxy.TargetService;
 import com.xue.client.designpatterns.proxy.TargetServiceImpl;
 import org.junit.Test;
 
-public class TestStaticProxy {
+/**
+ * @author QSNP253
+ */
+public class StaticProxyTest {
 
     @Test
     public void test(){

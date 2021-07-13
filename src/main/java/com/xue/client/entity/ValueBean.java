@@ -1,7 +1,9 @@
 package com.xue.client.entity;
 
-import org.springframework.stereotype.Component;
 
+/**
+ * @author QSNP253
+ */
 public class ValueBean {
 
     private String value1;

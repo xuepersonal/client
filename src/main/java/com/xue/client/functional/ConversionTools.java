@@ -1,7 +1,6 @@
 package com.xue.client.functional;
 
 import com.alibaba.fastjson.JSON;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.xue.client.functional.vo.BasisVo;
 import com.xue.client.functional.vo.OriginalVo;
 import org.apache.commons.collections4.CollectionUtils;
@@ -10,9 +9,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * @author QSNP253
+ */
 public class ConversionTools {
 
-    public List ConversionList(List<OriginalVo> originalList){
+    public List conversionList(List<OriginalVo> originalList){
 
 
         List<BasisVo> generateList = new ArrayList<>();

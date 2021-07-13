@@ -10,8 +10,8 @@ public class Computer {
     /**
      * 必须
      */
-    private String cpu;
-    private String ram;
+    private final String cpu;
+    private final String ram;
     /**
      * 可选
      */

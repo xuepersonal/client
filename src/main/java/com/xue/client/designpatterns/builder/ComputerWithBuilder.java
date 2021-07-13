@@ -1,16 +1,22 @@
 package com.xue.client.designpatterns.builder;
 
+import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
-@Getter
-@Setter
+/**
+ * @author QSNP253
+ */
+@Getter(value = AccessLevel.PUBLIC)
+@Setter(value = AccessLevel.PUBLIC)
+@ToString(of = {"cpu","ram","usbCount","keyboard","display"},exclude = {"display"})
 public class ComputerWithBuilder {
-    private final String cpu;//必须
-    private final String ram;//必须
-    private final int usbCount;//可选
-    private final String keyboard;//可选
-    private final String display;//可选
+    private String cpu;
+    private String ram;
+    private int usbCount;
+    private String keyboard;
+    private String display;
 
     private ComputerWithBuilder(Builder builder){
         this.cpu=builder.cpu;
@@ -20,11 +26,11 @@ public class ComputerWithBuilder {
         this.display=builder.display;
     }
     public static class Builder{
-        private String cpu;//必须
-        private String ram;//必须
-        private int usbCount;//可选
-        private String keyboard;//可选
-        private String display;//可选
+        private final String cpu;
+        private final String ram;
+        private int usbCount;
+        private String keyboard;
+        private String display;
 
         public Builder(String cup,String ram){
             this.cpu=cup;

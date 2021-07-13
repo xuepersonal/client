@@ -8,8 +8,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * @author QSNP253
+ */
 public class RuleService {
-    private Map<Integer, List<BaseRule>> hashMap = new HashMap<>();
+    private final Map<Integer, List<BaseRule>> hashMap = new HashMap<>();
     private static final int AND = 1;
     private static final int OR = 0;
     public static RuleService create() {
