@@ -21,9 +21,9 @@ spring:
   application:
     name: client
   datasource:
-    username: isystem
-    password: isystem
-    url: jdbc:jtds:sqlserver://GCDC-SQLDEV01.generalichina.com:2599;instance=SQLUAT01;DatabaseName=bcc
+    username: 
+    password: 
+    url: jdbc:jtds:sqlserver
     driver-class-name: net.sourceforge.jtds.jdbc.Driver
     hikari:
       connection-test-query: select 1
