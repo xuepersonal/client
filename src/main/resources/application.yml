@@ -9,9 +9,9 @@ server:
 
 cas:
   #cas服务端的地址
-  server-url-prefix: http://gcdc-sso-pc/cas
+  server-url-prefix: 
   #cas服务端的登录地址
-  server-login-url: http://gcdc-sso-pc/cas/login
+  server-login-url: 
   #当前服务器的地址(客户端)
   client-host-url: http://localhost:8762/
   #Ticket校验器
