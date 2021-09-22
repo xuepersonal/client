@@ -16,7 +16,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * @author QSNP253
+ * @author 
  */
 public class AuthorFilter implements Filter {
 
